@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 50px; /* Ruang untuk header/title */
+    padding-bottom: 70px; /* Ruang untuk bottom nav */
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #2196F3; /* Warna biru, sesuai theme_color di manifest */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px;
+}
+
+/* --- Style untuk List Tempat (Spot Card) --- */
+.spot-card {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.spot-card a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 15px;
+}
+
+.spot-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.spot-card h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+/* --- Bottom Navigation Bar (Wajib) --- */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #555;
+    text-align: center;
+    flex-grow: 1;
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+
+.bottom-nav a.active {
+    color: #2196F3;
+    font-weight: bold;
+}
+
+/* --- Style Halaman Detail --- */
+#spot-detail-content h2 {
+    color: #2196F3;
+    margin-top: 0;
+}
+
+.detail-info p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.fasilitas-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.fasilitas-list li {
+    background-color: #e0f7fa;
+    color: #00838f;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* --- Style Halaman About --- */
+.about-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
