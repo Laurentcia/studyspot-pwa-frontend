@@ -3,33 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About StudySpot</title>
+    <title>StudySpot - Profil</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <header>
-        <h1>Tentang Aplikasi</h1>
-    </header>
+    <nav class="top-nav">
+        <div class="logo">StudySpot</div>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="categories.html">Cari Tempat</a></li>
+            <li><a href="favorites.html">Favorit</a></li>
+            <li><a href="about.html" class="active">Profil</a></li>
+        </ul>
+    </nav>
 
-    <main>
+    <main class="content-section">
+        <h2>Profil Pengembang</h2>
+
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/150/0A1128/FFFFFF?text=L" alt="Foto Profil Laurentcia" class="profile-picture">
+            <h3>Laurentcia</h3>
+            <p class="role">Pengembang PWA & Mahasiswa</p>
+            <p class="bio">StudySpot adalah proyek Tugas Akhir (TA) mata kuliah Praktikum PWA yang bertujuan untuk mempermudah pencarian tempat belajar yang ideal di lingkungan kampus atau kota.</p>
+        </div>
+
         <div class="about-card">
-            <h2>StudySpot - Aplikasi Pencari Tempat Belajar</h2>
-            <p><strong>Deskripsi:</strong> StudySpot adalah aplikasi yang membantu pengguna menemukan kafe, perpustakaan, atau *co-working space* yang nyaman untuk mengerjakan tugas dan belajar.</p>
+            <h4>Tentang Aplikasi StudySpot</h4>
             <p><strong>Versi Aplikasi:</strong> 1.0 (TA Praktikum)</p>
-            <p><strong>Pengembang:</strong> Laurentcia</p>
             <p><strong>Materi Praktikum:</strong> Progressive Web Apps (PWA)</p>
-            <p><strong>Sumber Data (API):</strong> Web Service Mandiri yang di-*deploy* menggunakan Vercel.</p>
-            <p><strong>Repository GitHub:</strong> [Cantumkan link GitHub repository ini di sini]</p>
+            <p><strong>Sumber Data (API):</strong> Web Service Mandiri Vercel</p>
+        </div>
+
+        <div class="favorites-section">
+            <h4>Tempat Favorit Laurentcia</h4>
+            <div class="favorite-list">
+                <div class="favorite-item">
+                    <h5>⭐ Treetales Coffee & Eatery</h5>
+                    <p>Alasan: WiFi kencang, tempat duduk nyaman untuk laptop.</p>
+                </div>
+                <div class="favorite-item">
+                    <h5>⭐ Pixel Coffeeshop</h5>
+                    <p>Alasan: Worth the price dan pelayanannya ramah.</p>
+                </div>
+            </div>
         </div>
     </main>
-
-    <nav class="bottom-nav">
-        <a href="index.html"> Home</a>
-        <a href="categories.html"> Kategori</a>
-        <a href="favorites.html"> Favorit</a>
-        <a href="about.html" class="active"> About</a>
-    </nav>
 
     <script src="sw-register.js"></script>
 </body>
