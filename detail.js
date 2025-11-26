@@ -1,5 +1,5 @@
 // GANTI DENGAN URL API VERCEL ANDA YANG SEBENARNYA
-const BASE_API_URL = 'https://[nama-project-anda].vercel.app/api/spots'; 
+const BASE_API_URL = 'https://studyspot-one.vercel.app/api/spots'; 
 
 document.addEventListener('DOMContentLoaded', () => {
     // Hanya jalankan fungsi ini di detail.html
