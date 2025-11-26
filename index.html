@@ -8,24 +8,45 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <header>
-        <h1>StudySpot</h1>
-        <p>Tempat Nyaman Untuk Tugas dan Belajar</p>
+    <nav class="top-nav">
+        <div class="logo">StudySpot</div>
+        <ul>
+            <li><a href="index.html" class="active">Beranda</a></li>
+            <li><a href="categories.html">Cari Tempat</a></li>
+            <li><a href="favorites.html">Favorit</a></li>
+            <li><a href="about.html">Profil</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Selamat datang di <span class="highlight">StudySpot</span></h1>
+            <p class="tagline">Temukan Ruang Nyaman untuk Produktivitas Anda</p>
+            <p class="description">Jelajahi berbagai kafe, perpustakaan, dan co-working space yang ideal untuk belajar, kerja, atau sekadar bersantai.</p>
+            <div class="hero-buttons">
+                <a href="categories.html" class="btn primary-btn">Jelajahi Tempat &rarr;</a>
+                <a href="#video-tutorial" class="btn secondary-btn">Video Tutorial</a>
+            </div>
+        </div>
+        <div class="hero-image-grid">
+            <div class="main-image">
+                <img src="https://via.placeholder.com/400x300/0A1128/FFFFFF?text=Main+Spot" alt="Main Study Spot">
+            </div>
+            <div class="sub-image">
+                <img src="https://via.placeholder.com/200x150/007bff/FFFFFF?text=Spot+1" alt="Sub Spot 1">
+            </div>
+            <div class="sub-image">
+                <img src="https://via.placeholder.com/200x150/007bff/FFFFFF?text=Spot+2" alt="Sub Spot 2">
+            </div>
+        </div>
     </header>
 
-    <main id="spot-list-container">
-        <h2>Tempat Populer</h2>
-        <div id="spot-list">
-            <p>Memuat data tempat...</p>
+    <main class="content-section">
+        <h2>Pilihan Tempat Populer</h2>
+        <div id="spot-list-container-main" class="spot-grid">
+            <p>Memuat tempat populer...</p>
         </div>
     </main>
-
-    <nav class="bottom-nav">
-        <a href="index.html" class="active">🏠 Home</a>
-        <a href="categories.html">🔍 Kategori</a>
-        <a href="favorites.html">⭐ Favorit</a>
-        <a href="about.html">👤 About</a>
-    </nav>
 
     <script src="app.js"></script>
     <script src="sw-register.js"></script>
