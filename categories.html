@@ -1,4 +1,31 @@
-<nav class="bottom-nav">
-    <a href="index.html"> Home</a>
-    <a href="categories.html" class="active"> Kategori</a> 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySpot - Cari Tempat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo">StudySpot</div>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="categories.html" class="active">Cari Tempat</a></li> 
+            <li><a href="favorites.html">Favorit</a></li>
+            <li><a href="about.html">Profil</a></li>
+        </ul>
     </nav>
+
+    <main class="content-section">
+        <h2>Semua Tempat Belajar</h2> 
+        <div id="spot-list-container-main" class="spot-grid">
+            <p>Memuat semua tempat...</p>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="sw-register.js"></script>
+</body>
+</html>
