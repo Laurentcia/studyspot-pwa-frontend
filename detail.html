@@ -8,23 +8,23 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <header>
-        <h1 id="header-name">Detail Spot</h1>
-    </header>
-
-    <main id="spot-detail-container">
+    
+    <nav class="top-nav">
+        <div class="logo">StudySpot</div>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="categories.html">Cari Tempat</a></li>
+            <li><a href="favorites.html">Favorit</a></li>
+            <li><a href="about.html">Profil</a></li>
+        </ul>
+    </nav>
+    <main id="spot-detail-container" class="content-section">
         <div id="spot-detail-content">
             <p>Memuat detail tempat...</p>
         </div>
     </main>
-
-    <nav class="bottom-nav">
-        <a href="index.html"> Home</a>
-        <a href="categories.html"> Kategori</a>
-        <a href="favorites.html"> Favorit</a>
-        <a href="about.html"> About</a>
-    </nav>
-
-    <script src="app.js"></script>
-    <script src="detail.js"></script> </body>
+    
+    <script src="detail.js"></script> 
+    <script src="sw-register.js"></script>
+</body>
 </html>
